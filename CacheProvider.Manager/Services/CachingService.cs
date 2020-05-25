@@ -61,7 +61,6 @@ namespace CacheProvider.Services.Services
             if (isCacheKeyExist)
             {
                 var entity = Serializer.FromJson<T>(value);
-
                 return new ResultModel<T> { Success = true, CachedValue = entity }; 
             }
 
