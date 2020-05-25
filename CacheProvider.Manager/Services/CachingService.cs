@@ -43,11 +43,14 @@ namespace CacheProvider.Services.Services
 
         public ResultModel<T> SetValueCache<T>(T valueObject, string cacheKey, DateTime cacheDuration)
         {
-            string jsonValue =Serializer.ToJson(valueObject);
+           
             bool isCacheKeyExist = _memCache.TryGetValue(cacheKey, out T value);
 
             if (!isCacheKeyExist)
+            { 
+                string jsonValue =Serializer.ToJson(valueObject);
                 _memCache.Set(cacheKey, jsonValue, new MemoryCacheEntryOptions { AbsoluteExpiration = cacheDuration, Priority = CacheItemPriority.Normal });
+            }  
 
 
             return new ResultModel<T> { Success = true, Message = MessageConstants.SuccessMessage };
