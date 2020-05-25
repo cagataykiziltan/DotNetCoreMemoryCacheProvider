@@ -20,7 +20,7 @@ namespace CacheProvider.Services.Services
             
             if (!isCacheKeyExist)
             {
-                 myEntity = acquireFunction();
+                myEntity = acquireFunction();
                 string jsonEntity = Serializer.ToJson(myEntity);
 
                 var cacheExpOptions = new MemoryCacheEntryOptions
