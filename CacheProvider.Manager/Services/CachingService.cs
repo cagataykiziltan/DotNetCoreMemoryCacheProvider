@@ -15,9 +15,10 @@ namespace CacheProvider.Services.Services
 
         public T SetGetCache<T>( string cacheKey, DateTime cacheDuration, Func<T> acquireFunction)
         {
-            T myEntity;
-
-            if (!_memCache.TryGetValue(cacheKey, out string value))
+            T myEntity;        
+            bool isCacheKeyExist =_memCache.TryGetValue(cacheKey, out string value);        
+            
+            if (!isCacheKeyExist)
             {
                  myEntity = acquireFunction();
 
