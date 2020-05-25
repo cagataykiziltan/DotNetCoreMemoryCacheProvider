@@ -10,7 +10,7 @@ Includes functionalities below
 - RemoveCache
 - SetGetCache   
 
- It is not appropriate for using as an API because of generic type parameters and it is .net core dll. However, it can be used 
+ It is not appropriate for using as an API because of generic type parameters and it is .net core dll. However, codes can be used 
 in your app easily. In addition to that, it includes example usages in to test with swagger.
 
 Author
