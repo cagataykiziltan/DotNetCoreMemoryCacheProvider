@@ -1,0 +1,7 @@
+C:\Users\26042028\Source\Repos\CacheProvider\CacheProvider.Manager\bin\Debug\netcoreapp3.1\CacheProvider.Services.deps.json
+C:\Users\26042028\Source\Repos\CacheProvider\CacheProvider.Manager\bin\Debug\netcoreapp3.1\CacheProvider.Services.dll
+C:\Users\26042028\Source\Repos\CacheProvider\CacheProvider.Manager\bin\Debug\netcoreapp3.1\CacheProvider.Services.pdb
+C:\Users\26042028\Source\Repos\CacheProvider\CacheProvider.Manager\obj\Debug\netcoreapp3.1\CacheProvider.Services.AssemblyInfoInputs.cache
+C:\Users\26042028\Source\Repos\CacheProvider\CacheProvider.Manager\obj\Debug\netcoreapp3.1\CacheProvider.Services.AssemblyInfo.cs
+C:\Users\26042028\Source\Repos\CacheProvider\CacheProvider.Manager\obj\Debug\netcoreapp3.1\CacheProvider.Services.dll
+C:\Users\26042028\Source\Repos\CacheProvider\CacheProvider.Manager\obj\Debug\netcoreapp3.1\CacheProvider.Services.pdb
