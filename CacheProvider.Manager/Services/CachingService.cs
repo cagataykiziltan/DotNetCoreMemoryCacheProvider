@@ -37,7 +37,6 @@ namespace CacheProvider.Services.Services
                 myEntity = Serializer.FromJson<T>(value);
             }
 
-
             return myEntity;
         }
 
@@ -51,7 +50,6 @@ namespace CacheProvider.Services.Services
                 string jsonValue =Serializer.ToJson(valueObject);
                 _memCache.Set(cacheKey, jsonValue, new MemoryCacheEntryOptions { AbsoluteExpiration = cacheDuration, Priority = CacheItemPriority.Normal });
             }  
-
 
             return new ResultModel<T> { Success = true, Message = MessageConstants.SuccessMessage };
         }
