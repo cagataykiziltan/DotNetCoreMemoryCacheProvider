@@ -25,7 +25,7 @@ namespace CacheProvider.Controllers
             var students = studentApi.GetStudents();
             var cacheKey = "studentCache";
 
-            var result = _cachingManager.SetValueCache(students, cacheKey, DateTime.Now.AddMinutes(2));
+            var result = _cachingManager.SetCache(students, cacheKey, DateTime.Now.AddMinutes(2));
 
             return result;
         }
