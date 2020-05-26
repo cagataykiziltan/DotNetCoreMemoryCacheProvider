@@ -48,7 +48,11 @@ namespace CacheProvider.Services.Services
             if (!isCacheKeyExist)
             { 
                 string jsonValue =Serializer.ToJson(valueObject);
-                _memCache.Set(cacheKey, jsonValue, new MemoryCacheEntryOptions { AbsoluteExpiration = cacheDuration, Priority = CacheItemPriority.Normal });
+                _memCache.Set(cacheKey, jsonValue, new MemoryCacheEntryOptions
+                { 
+                    AbsoluteExpiration = cacheDuration, 
+                    Priority = CacheItemPriority.Normal 
+                });
             }  
 
             return new ResultModel<T> { Success = true, Message = MessageConstants.SuccessMessage };
