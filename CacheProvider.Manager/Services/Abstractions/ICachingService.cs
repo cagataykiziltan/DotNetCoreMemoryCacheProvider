@@ -8,7 +8,7 @@ namespace CacheProvider.Services.Services.Abstractions
     {
         T SetGetCache<T>(string cacheKey, DateTime cacheDuration, Func<T> acquireFunction);
 
-        ResultModel<T> SetValueCache<T>(T valueObject, string cacheKey, DateTime cacheDuration);
+        ResultModel<T> SetCache<T>(T valueObject, string cacheKey, DateTime cacheDuration);
 
         ResultModel<T> GetFromCache<T>(string cacheKey);
 
