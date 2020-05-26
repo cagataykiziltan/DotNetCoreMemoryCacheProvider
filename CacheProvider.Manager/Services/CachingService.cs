@@ -23,13 +23,11 @@ namespace CacheProvider.Services.Services
                 myEntity = acquireFunction();
                 string jsonEntity = Serializer.ToJson(myEntity);
 
-                var cacheExpOptions = new MemoryCacheEntryOptions
+                _memCache.Set(cacheKey, jsonEntity, new MemoryCacheEntryOptions
                 {
                     AbsoluteExpiration = cacheDuration,
                     Priority = CacheItemPriority.Normal
-                };
-
-                _memCache.Set(cacheKey, jsonEntity, cacheExpOptions);
+                });
 
             }
             else
