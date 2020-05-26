@@ -40,7 +40,7 @@ namespace CacheProvider.Services.Services
             return myEntity;
         }
 
-        public ResultModel<T> SetValueCache<T>(T valueObject, string cacheKey, DateTime cacheDuration)
+        public ResultModel<T> SetCache<T>(T valueObject, string cacheKey, DateTime cacheDuration)
         {
            
             bool isCacheKeyExist = _memCache.TryGetValue(cacheKey, out T value);
