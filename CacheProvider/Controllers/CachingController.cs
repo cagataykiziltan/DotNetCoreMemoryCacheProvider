@@ -55,7 +55,6 @@ namespace CacheProvider.Controllers
         public List<Student> SetGetCache()
         {
             var studentApi = new StudentApi();
-            var students = studentApi.GetStudents();
             var cacheKey = "studentCache";
 
             var result = _cachingManager.SetGetCache(cacheKey, DateTime.Now.AddMinutes(2), () =>
